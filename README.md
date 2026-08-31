@@ -61,13 +61,11 @@ Input (60 Days, 5 Stations) ➔ [ Data Scaler ] ➔ [ iTransformer Encoder ] ➔
 
 ---
 
-## Quick Start (Google Colab)
-
 ### 1. Prerequisites & Installation
 Please mail to 68010679@kmitl.ac.th or message in github
 ### 2. Key Takeaways & Limitations
 iTransformer demonstrates strong capacity in modeling seasonal transitions (dry/dust season vs. monsoon season).
-###Example
+Example
 ```python
     DEVICE = torch.device("cuda"
     if torch.cuda.is_available()
