@@ -49,19 +49,15 @@ Input (60 Days, 5 Stations) ➔ [ Data Scaler ] ➔ [ iTransformer Encoder ] ➔
 
 ### 1. Daily PM2.5 Spatial Mean Timeline (2021–2025)
 > Visualizing historical seasonality and pollution spikes in Thailand over a 5-year period.
-![PM2.5 Cleaned Timeline](pm25_cleaned_timeline.png)
+
 
 ### 2. Tuned iTransformer with MSE Loss vs. MAE Loss
 * **MSE Loss ($L_2$ Norm):** Effectively captures the macro-trend and overall seasonal transitions, though it tends to damp extreme peak values (Peak Under-estimation).
 * **MAE Loss ($L_1$ Norm):** Demonstrates higher robustness against localized noise and provides sharper responses near sudden trend changes.
 
-| MSE Result | MAE Result |
-| :---: | :---: |
-| ![MSE Forecast](itransformer_m5_mse_result.png) | ![MAE Forecast](itransformer_m5_mae_result.png) |
-
 ### 3. Trend Analysis (Rolling Smoothed Forecast)
 > Post-processing centered 3-day moving average filter applied to prediction sequences to capture baseline trends cleanly.
-![Smoothed Trend](itransformer_m5_result_smoothed.png)
+
 
 ---
 
