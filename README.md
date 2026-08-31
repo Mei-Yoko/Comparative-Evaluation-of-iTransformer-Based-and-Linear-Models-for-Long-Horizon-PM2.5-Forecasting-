@@ -10,7 +10,7 @@ This repository demonstrates spatial-temporal analysis, data cleaning & outlier 
 
 ---
 
-## 📌 Features & Highlights
+## Features & Highlights
 
 * **Multivariate Forecasting ($M=5$):** Uses 5 distinct spatial monitoring stations concurrently to capture cross-channel attention and spatial relationships.
 * **Data Cleaning & Outlier Mitigation:** Features robust preprocessing including 99.5th percentile quantile clipping, zero/negative filtering, and time-based interpolation.
@@ -19,7 +19,7 @@ This repository demonstrates spatial-temporal analysis, data cleaning & outlier 
 
 ---
 
-## 🛠️ Data Pipeline & Preprocessing
+## Data Pipeline & Preprocessing
 
 The historical dataset spans **2021 to 2025**, containing raw daily sensor readings across multiple stations.
 
@@ -31,7 +31,7 @@ The historical dataset spans **2021 to 2025**, containing raw daily sensor readi
 
 ---
 
-## 📊 Methodology & Model Architecture
+## Methodology & Model Architecture
 Input (60 Days, 5 Stations) ➔ [ Data Scaler ] ➔ [ iTransformer Encoder ] ➔ Output (30 Days, 5 Stations)
 | Hyperparameter | Value | Description |
 | :--- | :--- | :--- |
@@ -45,7 +45,7 @@ Input (60 Days, 5 Stations) ➔ [ Data Scaler ] ➔ [ iTransformer Encoder ] ➔
 
 ---
 
-## 📈 Experiments & Visualizations
+## Experiments & Visualizations
 
 ### 1. Daily PM2.5 Spatial Mean Timeline (2021–2025)
 > Visualizing historical seasonality and pollution spikes in Thailand over a 5-year period.
@@ -65,7 +65,7 @@ Input (60 Days, 5 Stations) ➔ [ Data Scaler ] ➔ [ iTransformer Encoder ] ➔
 
 ---
 
-## 🚀 Quick Start (Google Colab)
+## Quick Start (Google Colab)
 
 ### 1. Prerequisites & Installation
 
@@ -106,7 +106,7 @@ model.fit(
 # Predict
 predictions = model.predict(X_test)
 
-#💡 Key Takeaways & Limitations
+#Key Takeaways & Limitations
 Macro-Trend Learning: iTransformer demonstrates strong capacity in modeling seasonal transitions (dry/dust season vs. monsoon season).
 
 Peak Under-estimation: Time-series inputs alone without external meteorological triggers (e.g., wind speed, humidity, hotspot counts) limit the model's ability to anticipate sharp, single-day pollution spikes.
