@@ -60,13 +60,49 @@ Input (60 Days, 5 Stations) ➔ [ Data Scaler ] ➔ [ iTransformer Encoder ] ➔
 
 
 ---
+##Running the Pipeline
+Clone the repo and run the main script or notebook:
+### Load preprocessed sliding window data X_train (N, 60, 5) & Y_train (N, 30, 5)
+```
+  DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+```
+### Initialize iTransformer
+```
+    model = get_model(
+    "itransformer",
+    seq_len=60,
+    pred_len=30,
+    n_channels=5,
+    d_model=64,
+    e_layers=2,
+    dropout=0.1
+)
+```
+### Train using MAE or MSE Loss
+```
+    model.fit(
+    X_train,
+    y=Y_train,
+    loss="mae",
+    epochs=40,
+    batch_size=32,
+    scale=True,
+    device=DEVICE,
+    lr=1e-3
+)
+```
+### Predict
+```
+predictions = model.predict(X_test)
+```
 
 ### 1. Prerequisites & Installation
 Please mail to 68010679@kmitl.ac.th or message in github
 ### 2. Key Takeaways & Limitations
 iTransformer demonstrates strong capacity in modeling seasonal transitions (dry/dust season vs. monsoon season).
 Example
-```python
+```
+  python
     DEVICE = torch.device("cuda"
     if torch.cuda.is_available()
     else "cpu")al': {result.residual})
