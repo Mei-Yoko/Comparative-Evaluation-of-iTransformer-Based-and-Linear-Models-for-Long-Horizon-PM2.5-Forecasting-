@@ -60,10 +60,13 @@ Input (60 Days, 5 Stations) ➔ [ Data Scaler ] ➔ [ iTransformer Encoder ] ➔
 
 
 ---
-
-##Running the Pipeline
-
-###Clone the repo and run the main script or notebook:
+##Running the Pipeline : Clone the repo and run the main script or notebook:
+```
+import torch
+import pandas as pd
+import numpy as np
+from ~~~~ import get_model
+```
 ### Load preprocessed sliding window data X_train (N, 60, 5) & Y_train (N, 30, 5)
 ```
   DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
