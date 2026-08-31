@@ -1,4 +1,4 @@
-# 🌫️ PM2.5 Time-Series Forecasting with iTransformer ($M=5$)
+# 🌫️ PM2.5 Time-Series Forecasting with iTransformer 
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-EE4C2C.svg)](https://pytorch.org/)
