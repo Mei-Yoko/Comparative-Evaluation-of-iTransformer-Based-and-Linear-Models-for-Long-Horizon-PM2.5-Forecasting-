@@ -60,6 +60,7 @@ Input (60 Days, 5 Stations) ➔ [ Data Scaler ] ➔ [ iTransformer Encoder ] ➔
 
 
 ---
+
 ##Running the Pipeline
 Clone the repo and run the main script or notebook:
 ### Load preprocessed sliding window data X_train (N, 60, 5) & Y_train (N, 30, 5)
@@ -95,6 +96,8 @@ Clone the repo and run the main script or notebook:
 ```
 predictions = model.predict(X_test)
 ```
+
+---
 
 ### 1. Prerequisites & Installation
 Please mail to 68010679@kmitl.ac.th or message in github
