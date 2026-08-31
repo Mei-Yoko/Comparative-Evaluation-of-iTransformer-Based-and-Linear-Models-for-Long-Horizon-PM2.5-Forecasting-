@@ -64,45 +64,12 @@ Input (60 Days, 5 Stations) ➔ [ Data Scaler ] ➔ [ iTransformer Encoder ] ➔
 ## Quick Start (Google Colab)
 
 ### 1. Prerequisites & Installation
-
-Ensure you have your `.whl` package (`forecast2win`) uploaded to your runtime environment: but this runtime is now closing you cantact me for the runtime
-2. Running the Pipeline
-Clone the repo and run the main script or notebook:
-import torch
-import pandas as pd
-import numpy as np
-from -.models import get_model
-
-# Load preprocessed sliding window data X_train (N, 60, 5) & Y_train (N, 30, 5)
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-# Initialize iTransformer
-model = get_model(
-    "itransformer",
-    seq_len=60,
-    pred_len=30,
-    n_channels=5,
-    d_model=64,
-    e_layers=2,
-    dropout=0.1
-)
-
-# Train using MAE or MSE Loss
-model.fit(
-    X_train,
-    y=Y_train,
-    loss="mae",
-    epochs=40,
-    batch_size=32,
-    scale=True,
-    device=DEVICE,
-    lr=1e-3
-)
-
-# Predict
-predictions = model.predict(X_test)
-
-#Key Takeaways & Limitations
-Macro-Trend Learning: iTransformer demonstrates strong capacity in modeling seasonal transitions (dry/dust season vs. monsoon season).
-
-Peak Under-estimation: Time-series inputs alone without external meteorological triggers (e.g., wind speed, humidity, hotspot counts) limit the model's ability to anticipate sharp, single-day pollution spikes.
+Please mail to 68010679@kmitl.ac.th or message in github
+### 2. Key Takeaways & Limitations
+iTransformer demonstrates strong capacity in modeling seasonal transitions (dry/dust season vs. monsoon season).
+###Example
+```python
+    DEVICE = torch.device("cuda"
+    if torch.cuda.is_available()
+    else "cpu")al': {result.residual})
+```
