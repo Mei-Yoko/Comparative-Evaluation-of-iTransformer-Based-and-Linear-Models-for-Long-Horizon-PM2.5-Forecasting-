@@ -60,7 +60,8 @@ Input (60 Days, 5 Stations) ➔ [ Data Scaler ] ➔ [ iTransformer Encoder ] ➔
 
 
 ---
-## Running the Pipeline : Clone the repo and run the main script or notebook:
+## Running the Pipeline : 
+### Clone the repo and run the main script or notebook:
 ```
 import torch
 import pandas as pd
