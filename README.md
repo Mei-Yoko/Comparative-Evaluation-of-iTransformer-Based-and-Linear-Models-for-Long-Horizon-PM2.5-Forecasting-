@@ -105,7 +105,7 @@ predictions = model.predict(X_test)
 ---
 
 ### 1. Prerequisites & Installation
-Please mail to 68010679@kmitl.ac.th or message in github
+Please mail to 68010679@kmitl.ac.th or message in github : This Library its now closing
 ### 2. Key Takeaways & Limitations
 iTransformer demonstrates strong capacity in modeling seasonal transitions (dry/dust season vs. monsoon season).
 Example
